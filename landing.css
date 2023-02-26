@@ -1,0 +1,26 @@
+  nav {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(51, 56, 65);
+  }
+  
+  nav ul {
+    color: #0077cc;
+    font-size: 30px;
+    text-align: right;
+  }
+
+  nav li {
+    display: inline-block;
+    
+  }
+
+  nav a {
+    color: white;
+  }
+
+  nav a:hover{
+    color: rgb(99, 97, 187);
+  }
+
+  
+
