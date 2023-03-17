@@ -1,8 +1,41 @@
-<html>
+{% load static %}
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/index.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/left_sidebar_nav.css' %}"
+    />
     <title>Pinvestigator</title>
   </head>
   <body>
-    <p>Hey</p>
+    <header class="nav-header">
+      <img
+        src="css/image/profimg.png"
+        alt="Pinvestigations"
+        ,
+        class="img-logo-design"
+      />
+      <nav>
+        <ul class="nav-link-designs">
+          <li><a href="#">Signup</a></li>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--********Header end*********-->
+
+    <!--*****main background contents*****-->
+    {% block content %}{% endblock %}
   </body>
 </html>

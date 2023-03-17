@@ -3,7 +3,5 @@ from django.http import HttpResponse
 
 # Create your views here.
 def index(response):
-    return render(response, "main/base.html", {})
+    return render(response, "main/index.html", {})
 
-def landing(response):
-    return render(response, "main/home.html", {})
