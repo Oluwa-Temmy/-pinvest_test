@@ -1,8 +1,7 @@
-{% extends 'main/base.html' %} {% block content %}
+{% extends "main/base.html" %} {% block content %}
 <div class="main-bg">
-  <img src="" alt="" />
-  <div>
-    <img src="" alt="" />
-  </div>
+  {% block test %}
+  <p>Left side bar render</p>
+  {% endblock test%}
 </div>
-{% endblock%}
+{% endblock content %}

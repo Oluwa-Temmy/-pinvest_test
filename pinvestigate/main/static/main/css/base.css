@@ -11,6 +11,8 @@
   align-items: center;
   padding: 10px 10%;
   background-color: #554d3d;
+  border-style: solid;
+  border-width: 0px 0px 5px 0px;
 }
 
 nav {

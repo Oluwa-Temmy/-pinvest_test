@@ -1,41 +1,55 @@
+<!DOCTYPE html>
 {% load static %}
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}" />
+    <!-- ***CSS sheet for base(navbar)*** -->
     <link
       rel="stylesheet"
       type="text/css"
-      href="{% static 'css/index.css' %}"
+      href="{% static 'main/css/base.css' %}"
     />
+    <!-- ***CSS sheet for index(main content)*** -->
     <link
       rel="stylesheet"
       type="text/css"
-      href="{% static 'css/left_sidebar_nav.css' %}"
+      href="{% static '/main/css/index.css' %}"
     />
+    <!-- ***CSS sheet for left sidebar nav*** -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static '/main/css/left_sidebar_nav.css' %}"
+    />
+    <!--**start extrahead content **-->
+    {% block extrahead_content %}{% endblock extrahead_content %}
+    <!--**end extrahead content **-->
     <title>Pinvestigator</title>
   </head>
+  <!--***End of head***-->
+
   <body>
+    <!--***Navbar starts***-->
     <header class="nav-header">
       <img
-        src="css/image/profimg.png"
+        src="{% static 'main/image/profimg.png' %}"
         alt="Pinvestigations"
         ,
         class="img-logo-design"
       />
       <nav>
-        <ul class="nav-link-designs">
-          <li><a href="#">Signup</a></li>
-          <li><a href="#">Login</a></li>
+        <ul class="nav-link-designs" id="index-nav-links">
+          <li><a href="{% url 'signup' %}">Signup</a></li>
+          <li><a href="http://127.0.0.1:8000/login">Login</a></li>
           <li><a href="#">About Us</a></li>
         </ul>
       </nav>
     </header>
-    <!--********Header end*********-->
+    <!--******Navbar ends*******-->
 
-    <!--*****main background contents*****-->
-    {% block content %}{% endblock %}
+    <!--*****main background contents start*****-->
+    {% block content %}{% endblock content %}
   </body>
 </html>

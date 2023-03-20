@@ -1,0 +1,50 @@
+{% extends 'main/base.html' %} {% load static %}
+
+<!--** login head **-->
+{% block extrahead_content %}
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static '/main/css/access_forms_css/access_base_forms.css' %}"
+/>
+{% endblock extrahead_content %}
+
+<!--** login body **-->
+{% block content %}
+<div class="access-base-form-container">
+  <!--** center login box container **-->
+  <!-- There is room for improvment for the login page to make it more dynamic-->
+  <div class="access-base-form-content-container">
+    <div>
+      <div>
+        <h2>Create and Pinvestigate</h2>
+      </div>
+    </div>
+    <div class="login-form-content">
+      <form method="POST" action="#">
+        {% csrf_token %}
+        <label for="login-firstname-form">Firstname </label>
+        <input type="text" /><br />
+        <label for="login-lastname-form">Lastname </label>
+        <input type="text" /><br />
+        <label for="login-username-form">Create Username </label>
+        <input type="text" /><br />
+        <label for="login-email-form">Email</label>
+        <input type="text" /><br />
+        <label for="login-password-form">Create Password</label>
+        <input type="text" /><br />
+        <input type="submit" value="Create Account" />
+      </form>
+    </div>
+    <div>
+      <!--! tags in nav-link-designs class in base.css is being applied to create account link-->
+      <small>
+        Already a pinvestigator?
+        <a class="login-link-to-create-account" href="{% url 'signup' %}">
+          Hop back in the action
+        </a>
+      </small>
+    </div>
+  </div>
+</div>
+{% endblock content %}

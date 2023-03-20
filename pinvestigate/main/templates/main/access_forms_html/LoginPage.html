@@ -1,0 +1,44 @@
+{% extends 'main/base.html' %} {% load static %}
+
+<!--** login head **-->
+{% block extrahead_content %}
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static '/main/css/access_forms_css/access_base_forms.css' %}"
+/>
+{% endblock extrahead_content %}
+
+<!--** login body **-->
+{% block content %}
+<div class="access-base-form-container">
+  <!-- **                 center login box container                        ** -->
+  <!-- There is room for improvment for the login page to make it more dynamic -->
+  <div class="access-base-form-content-container">
+    <div>
+      <div>
+        <h2>Welcome back Pinvestigator</h2>
+      </div>
+    </div>
+    <div class="login-form-content">
+      <form method="POST" action="#">
+        {% csrf_token %}
+        <label for="login-username-form">Username </label>
+        <input type="text" /><br />
+        <label for="login-password-form">Password</label>
+        <input type="text" /><br />
+        <input type="submit" value="Login" />
+      </form>
+    </div>
+    <div>
+      <!--! tags in nav-link-designs class in base.css is being applied to create account link-->
+      <small>
+        Don't have an account?
+        <a class="login-link-to-create-account" href="{% url 'signup' %}">
+          Create an account
+        </a>
+      </small>
+    </div>
+  </div>
+</div>
+{% endblock content %}
