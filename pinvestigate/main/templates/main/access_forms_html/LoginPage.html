@@ -42,3 +42,8 @@
   </div>
 </div>
 {% endblock content %}
+
+<!--fyi: JS Code Specific to signup form -->
+{% block extra_js_content_aft_body %}
+<script src="{% static '/main/js/access_form_js/signup_page_js/login_form_script.js' %}"></script>
+{% endblock extra_js_content_aft_body %}
