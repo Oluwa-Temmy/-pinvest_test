@@ -42,8 +42,10 @@
       <nav>
         <ul class="nav-link-designs" id="index-nav-links">
           <li><a href="{% url 'signup' %}">Signup</a></li>
-          <li><a href="http://127.0.0.1:8000/login">Login</a></li>
-          <li><a href="#">About Us</a></li>
+          <li><a href="{% url 'login' %}">Login</a></li>
+          <li>
+            <a href="{% url 'about_us' %}">About Us</a>
+          </li>
         </ul>
       </nav>
     </header>

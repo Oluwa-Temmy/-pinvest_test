@@ -7,6 +7,8 @@
   type="text/css"
   href="{% static '/main/css/access_forms_css/access_base_forms.css' %}"
 />
+<!--**title-->
+<title>Pinvestigator Signup Page</title>
 {% endblock extrahead_content %}
 
 <!--fyi: This is the main content of the web page-->
@@ -20,6 +22,7 @@
         <h2>Create and Pinvestigate</h2>
       </div>
     </div>
+    <!--kit: start signup form -->
     <div>
       <!--! Issue with post method-->
       <form method="POST" action="#">
@@ -27,17 +30,22 @@
         {{form.last_name}} <br />
         {{form.email}} <br />
         {{form.username}} <br />
-        {{form.password}} <br />
+        {{form.password1}} <br />
+        {{form.password2}} <br />
         <input type="submit" value="Create Account" />
       </form>
     </div>
+    {{form.errors}}
+    <!--kit: end signup form -->
+    <!--kit: start link to login page-->
     <div>
       <!--! tags in nav-link-designs class in base.css is being applied to create account link-->
       <small>
         Already a pinvestigator?
-        <a href="{% url 'signup' %}"> Hop back in the action </a>
+        <a href="{% url 'login' %}"> Hop back in the action </a>
       </small>
     </div>
+    <!--kit: end link to login page-->
   </div>
 </div>
 {% endblock content %}

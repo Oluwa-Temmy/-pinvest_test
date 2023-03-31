@@ -20,16 +20,32 @@
         <h2>Welcome back Pinvestigator</h2>
       </div>
     </div>
+    <!--kit: start of login form -->
     <div class="login-form-content">
       <form method="POST" action="#">
         {% csrf_token %}
         <label for="login-username-form">Username </label>
-        <input type="text" /><br />
+        <input
+          type="text"
+          name="username"
+          placeholder="Username"
+          class="form-control"
+        /><br />
         <label for="login-password-form">Password</label>
-        <input type="text" /><br />
+        <input
+          type="text"
+          name="password"
+          placeholder="Password"
+          class="form-control"
+        /><br />
         <input type="submit" value="Login" />
       </form>
+      {% for message in messages %}
+      <p id="messages">{{message}}</p>
+      {% endfor %}
     </div>
+    <!--kit: end of login form -->
+    <!--kit: start link to signup page-->
     <div>
       <!--! tags in nav-link-designs class in base.css is being applied to create account link-->
       <small>
@@ -39,6 +55,7 @@
         </a>
       </small>
     </div>
+    <!--kit: end link to signup page-->
   </div>
 </div>
 {% endblock content %}

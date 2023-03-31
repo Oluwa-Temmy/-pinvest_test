@@ -1,0 +1,23 @@
+{% extends 'main/base.html' %} {% load static %} {% block extrahead_content %}
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static '/main/css/uni_bg.css' %}"
+/>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static '/main/css/homepage_css/homepage.css' %}"
+/>
+<title>Homepage</title>
+{% endblock extrahead_content %} {% block content%}
+<section class="uni-bg">
+  <div class="case-list-container" id="case-list">
+    <p>Homepage</p>
+    <p>hello</p>
+    <div><p>Hey</p></div>
+  </div>
+</section>
+{% endblock content%} {% block extra_js_content_aft_body %}
+<script src="{% static '/main/js/homepage_js/homepage_case_list.js' %}"></script>
+{% endblock extra_js_content_aft_body %}
