@@ -33,26 +33,28 @@
   <body>
     <!--***Navbar starts***-->
     <header class="nav-header">
-      <img
-        src="{% static 'main/image/profimg.png' %}"
-        alt="Pinvestigations"
-        ,
-        class="img-logo-design"
-      />
+      <a href="{% url 'index'%}">
+        <img
+          src="{% static 'main/image/profimg.png' %}"
+          alt="Pinvestigations home label"
+          ,
+          class="img-logo-design"
+        />
+      </a>
       <nav>
-        <ul class="nav-link-designs" id="index-nav-links">
+        <ul class="nav-link-designs">
           <li><a href="{% url 'signup' %}">Signup</a></li>
           <li><a href="{% url 'login' %}">Login</a></li>
-          <li>
-            <a href="{% url 'about_us' %}">About Us</a>
-          </li>
+          <li><a href="{% url 'about_us' %}">About Us</a></li>
         </ul>
       </nav>
     </header>
     <!--******Navbar ends*******-->
 
     <!--*****main background contents start*****-->
-    {% block content %}{% endblock content %}
+    {% block content %} {% endblock content %}
+    <!--Javascript for website-->
+    {% block extra_js_content_aft_body %}{% endblock extra_js_content_aft_body%}
+    <!--End java script-->
   </body>
-  {% block extra_js_content_aft_body %}{% endblock extra_js_content_aft_body %}
 </html>

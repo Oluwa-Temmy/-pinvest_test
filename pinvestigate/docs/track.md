@@ -4,5 +4,6 @@
 
 -Installed nvm for windows, node.js, and npm
 [Done] Include javascript to signup file to put name of entry inside of entrybox
--Fix csrf token in sign up page
--Fix submit not submitting
+[Fixed]Fix csrf token in sign up page
+[Fixed]Fix submit not submitting
+[Note] Links are now fixed, make sure to remove comma so that it only applies to that certain element
