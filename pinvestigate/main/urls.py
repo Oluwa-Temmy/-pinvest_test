@@ -9,5 +9,8 @@ urlpatterns = [
     path("about", views.about_us, name="about_us"),
 
     #*Given access
-    path("homepage", views.homepage, name="homepage")
+    path("homepage", views.homepage, name="homepage"),
+
+    #*Test urls
+    path("test",views.test_page,name="tests")
 ]

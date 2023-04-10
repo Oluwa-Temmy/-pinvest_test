@@ -9,8 +9,9 @@
   border-color: rgb(118, 118, 118);
 
   padding: 20px 55px 20px 55px;
+}
 
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+#case-list-item img {
+  max-width: 125px;
+  max-height: 150px;
 }

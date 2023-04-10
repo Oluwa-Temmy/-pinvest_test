@@ -55,3 +55,7 @@ def about_us(response):
 #fyi: Home page
 def homepage(response):
     return render(response, "main/homepage_html/homepage.html", {})
+
+#*Test view
+def test_page(response):
+    return render(response, "main/test.html", {})
