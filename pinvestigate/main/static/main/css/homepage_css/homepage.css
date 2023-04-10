@@ -1,0 +1,16 @@
+.parent-content-container {
+  background-color: #c5ac6b !important;
+  /*clip-path: polygon(0 0, 50% 0, 50% 20%, 100% 20%, 100% 100%, 0 100%);*/
+}
+
+#case-list-item {
+  border-style: groove;
+  border-width: 5px 0 5px 0;
+  border-color: rgb(118, 118, 118);
+
+  padding: 20px 55px 20px 55px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

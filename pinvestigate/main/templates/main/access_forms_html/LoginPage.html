@@ -24,14 +24,12 @@
     <div class="login-form-content">
       <form method="POST" action="#">
         {% csrf_token %}
-        <label for="login-username-form">Username </label>
         <input
           type="text"
           name="username"
           placeholder="Username"
           class="form-control"
         /><br />
-        <label for="login-password-form">Password</label>
         <input
           type="text"
           name="password"

@@ -7,3 +7,12 @@
 [Fixed]Fix csrf token in sign up page
 [Fixed]Fix submit not submitting
 [Note] Links are now fixed, make sure to remove comma so that it only applies to that certain element
+
+## Task [04/10/2023]:
+
+Complete homepage
+
+## Last stop [04/10/2023]:
+
+Make homepage
+[Added Bootstrap]Fix colorization

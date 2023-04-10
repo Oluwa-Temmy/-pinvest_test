@@ -11,9 +11,24 @@
 />
 <title>Homepage</title>
 {% endblock extrahead_content %} {% block content%}
-<section class="uni-bg">
-  <div class="case-list-container" id="case-list">
-    <div id="case-list-item">I am a case list item</div>
+<section class="uni-bg" id="parent-pos-section">
+  <h1>Top Cases</h1>
+  <div class="parent-content-container" id="case-list">
+    <div id="case-list-item">
+      <div>
+        <img
+          src="{% static 'main/image/profimg.png' %}"
+          alt="case_img_placeholder"
+        />
+        <h2>case_individual_name</h2>
+      </div>
+      <div>
+        <h1>Case: case_name</h1>
+        <h2>Case_type</h2>
+        <h3>Location</h3>
+        <small>description</small>
+      </div>
+    </div>
   </div>
 </section>
 {% endblock content%} {% block extra_js_content_aft_body %}

@@ -1,3 +1,37 @@
-{% extends 'main/base.html' %} {% block content %}
-<p>About Us Page</p>
+{% extends 'main/base.html' %} {% load static %}
+
+<!--** about us head **-->
+{% block extrahead_content %}
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static '/main/css/uni_bg.css' %}"
+/>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static '/main/css/supplements_css/general_css/about_us.css' %}"
+/>
+{% endblock extrahead_content %} {% block content %}
+<section class="uni-bg" id="parent-pos-section">
+  <div class="outdir-list-links">
+    <ul>
+      <a href="#">Wiki Lore</a>
+      <a href="#">Github Repository</a>
+      <a href="#">News</a>
+    </ul>
+  </div>
+  <div class="parent-content-container">
+    <div>
+      <article>
+        <h1>Creator</h1>
+        <p>About Me content</p>
+      </article>
+      <article>
+        <h1>Why did I create Pinvestigator?</h1>
+        <p>I hate crime</p>
+      </article>
+    </div>
+  </div>
+</section>
 {% endblock %}
