@@ -1,5 +1,11 @@
+ul {
+  list-style-type: none;
+}
+
 .parent-content-container {
   background-color: #c5ac6b !important;
+
+  border-radius: 0px 0px 10px 10px;
   /*clip-path: polygon(0 0, 50% 0, 50% 20%, 100% 20%, 100% 100%, 0 100%);*/
 }
 

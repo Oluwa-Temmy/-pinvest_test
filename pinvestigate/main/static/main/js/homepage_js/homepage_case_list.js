@@ -1,11 +1,10 @@
-fetch("/static/main/json/case_list_data/case_block_data.json")
-  .then((response) => response.json())
-  .then((data) => {
-    const list = document.getElementById("case-list-item");
-    data.forEach((element) => {
-      const li = document.createElement("p");
-      li.textContent = element.name;
-      list.appendChild(li);
+const testapi = "https://dummyjson.com/products";
+const elemdiv = document.getElementById("case-list");
+fetch(testapi)
+  .then((res) => res.json())
+  .then((tofo) => {
+    tofo.forEach((post) => {
+      case_container_box.innerHTML = `<h1>${post.title}</h1><p>${post.description}</p>`;
     });
   })
-  .catch((error) => console.error(error));
+  .catch(console.error);

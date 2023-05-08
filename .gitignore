@@ -1,1 +1,6 @@
 issues.md
+node_modules/
+package-lock.json
+package.json
+
+pinvestigate/docs/track.md

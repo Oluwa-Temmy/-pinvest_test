@@ -12,11 +12,27 @@
 <title>Homepage</title>
 {% endblock extrahead_content %} {% block content%}
 <section class="uni-bg" id="parent-pos-section">
-  <h1>Top Cases</h1>
+  <!--kit: START HEADER NAV LINKS-->
+  <div id="top-page-link">
+    <nav>
+      <ul class="d-flex flex-row">
+        <li class="col-3"><a href="#">World</a></li>
+        <li class="col-3"><a href="#">JUT</a></li>
+        <li class="col-3"><a href="#">George</a></li>
+      </ul>
+    </nav>
+  </div>
+  <!--kit: END HEADER NAV LINKS-->
+  <div>
+    <h1>Top Cases</h1>
+  </div>
+
+  <!--kit: START CASE AREA -->
   <div class="parent-content-container" id="case-list">
     <div class="row" id="case-list-item">
       <div class="col-md-6">
         <img
+          class="suspect-profile-img"
           src="{% static 'main/image/profimg.png' %}"
           alt="case_img_placeholder"
         />
@@ -30,6 +46,7 @@
       </div>
     </div>
   </div>
+  <!--kit: END CASE AREA -->
 </section>
 {% endblock content%} {% block extra_js_content_aft_body %}
 <script src="{% static '/main/js/homepage_js/homepage_case_list.js' %}"></script>
