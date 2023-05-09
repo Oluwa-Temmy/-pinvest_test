@@ -36,9 +36,11 @@ Investigate public cases
 - [Authors](#authors)
 - [Acknowledgments](#acknowledgement)
 
-## 🧐 About <a name = "about"></a>
+## 🧐 Why Pinvestigator <a name = "about"></a>
 
-Write about 1-2 paragraphs describing the purpose of your project.
+This project was started out of fustration of the amount of crimes going on and unsolved in Chicago. According to (), "CPD cleared about () of murders", this means that () went unsolved. Chicago Police Department has not been any help to its loyal residents maybe due to incompetence or restrictions placed on them, but now Chicago has become a place 
+
+I've had this project on my mind for about 2-3 months before I initially created the repo on November 3rd, 2022 and began working on the project In January 2023. My goal for this project is to be able to involve the community to solve crimes in Chicago, then eventually the whole of the US and maybe used in other countries. 
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
