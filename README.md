@@ -54,7 +54,7 @@ I've had this project on my mind for about 2-3 months before I initially created
 
 ### Languages
 - [Python](https://www.python.org/) - Used for backend functions
-- [JavaScript] - Used for bringing FE data to BE and vice versa 
+- JavaScript - Used for bringing FE data to BE and vice versa 
 
 ### Backend
 - [MongoDB](https://www.mongodb.com/) - Database
