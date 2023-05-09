@@ -1,16 +1,16 @@
-#issues.md
-#node_modules/
-#package-lock.json
-#package.json
+issues.md
+node_modules/
+package-lock.json
+package.json
 
-#pinvestigate/docs/track.md
-#pinvestigate/pinvestigate/
+pinvestigate/docs/track.md
+pinvestigate/pinvestigate/
 
-#pinvestigate/main/admin.py
-#pinvestigate/main/apps.py
-#pinvestigate/main/models.py
-#pinvestigate/main/urls.py
-#pinvestigate/main/views.py
-#pinvestigate/main/tests.py
+pinvestigate/main/admin.py
+pinvestigate/main/apps.py
+pinvestigate/main/models.py
+pinvestigate/main/urls.py
+pinvestigate/main/views.py
+pinvestigate/main/tests.py
 
-#*.sqlite3
+*.sqlite3
