@@ -11,6 +11,6 @@ pinvestigate/main/apps.py
 pinvestigate/main/models.py
 pinvestigate/main/urls.py
 pinvestigate/main/views.py
-pinvestigate/main/test.py
+pinvestigate/main/tests.py
 
 *.sqlite3
