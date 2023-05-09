@@ -36,9 +36,12 @@ Investigate public cases
 
 ## 🧐 Why Pinvestigator <a name = "about"></a>
 
-This project was started out of fustration of the amount of crimes going on and unsolved in Chicago. According to (), "CPD cleared about () of murders", this means that () went unsolved. Chicago Police Department has not been any help to its loyal residents maybe due to incompetence or restrictions placed on them, but now Chicago has become a place 
+This project was started out of fustration of the amount of crimes going on and unsolved in Chicago. According to an article written by Blair Paddock, from WTTW News, "For the past several years, the Chicago Police Department has solved an average of 50% of the city’s homicides per year.", this means that the other half of murder cases went unsolved. Chicago Police Department has not been any help to its loyal residents maybe due to incompetence or restrictions placed on them, but now Chicago has become a dangerous place for everyone. 
 
-I've had this project on my mind for about 2-3 months before I initially created the repo on November 3rd, 2022 and began working on the project In January 2023. My goal for this project is to be able to involve the community to solve crimes in Chicago, then eventually the whole of the US and maybe used in other countries. 
+I've had this project on my mind for about 2-3 months before I initially created the repo on November 3rd, 2022 and began working on the project in January of 2023. My goal for this project is to be able to involve the community to solve crimes in Chicago, then eventually the whole of the US and maybe used in other countries. 
+
+Articles:
+Paddock, Blair. “Homicide Clearance Rate Lower in Chicago’s Black Communities: Report.” WTTW News, 3 Feb. 2023, news.wttw.com/2023/02/03/homicide-    clearance-rate-lower-chicago-s-black-communities-report. 
 
 ## ✍️ Authors <a name = "authors"></a>
 
