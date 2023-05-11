@@ -1,4 +1,4 @@
-# Pinvestigator
+# Pinvestigator 0.2.4
 
 Investigate public cases
 
@@ -13,7 +13,7 @@ Investigate public cases
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
 [![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/Oluwa-Temmy/Pinvestigator/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/Oluwa-Temmy/Pinvestigator/pulls)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
 </div>
@@ -26,94 +26,46 @@ Investigate public cases
 
 ## 📝 Table of Contents
 
-- [About](#about)
-- [Getting Started](#getting_started)
-- [Deployment](#deployment)
-- [Usage](#usage)
-- [Built Using](#built_using)
-- [TODO](../TODO.md)
-- [Contributing](../CONTRIBUTING.md)
+- [Why Pinvestigator](#about)
 - [Authors](#authors)
+- [Future Releases](#future_releases)
+- [Built Using](#built_using)
 - [Acknowledgments](#acknowledgement)
+<!-- [Contributing](../CONTRIBUTING.md)-->
 
-## 🧐 About <a name = "about"></a>
 
-Write about 1-2 paragraphs describing the purpose of your project.
+## 🧐 Why Pinvestigator <a name = "about"></a>
 
-## 🏁 Getting Started <a name = "getting_started"></a>
+This project was started out of fustration of the amount of crimes going on and unsolved in Chicago. According to an article written by Blair Paddock, from WTTW News, "For the past several years, the Chicago Police Department has solved an average of 50% of the city’s homicides per year.", this means that the other half of murder cases went unsolved. Chicago Police Department has not been any help to its loyal residents maybe due to incompetence or restrictions placed on them, but now Chicago has become a dangerous place for everyone. 
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
+I've had this project on my mind for about 2-3 months before I initially created the repo on November 3rd, 2022 and began working on the project in January of 2023. My goal for this project is to be able to involve the community to solve crimes in Chicago, then eventually the whole of the US and maybe used in other countries. 
 
-### Prerequisites
+Articles:
+Paddock, Blair. “Homicide Clearance Rate Lower in Chicago’s Black Communities: Report.” WTTW News, 3 Feb. 2023, news.wttw.com/2023/02/03/homicide-    clearance-rate-lower-chicago-s-black-communities-report. 
 
-What things you need to install the software and how to install them.
+## ✍️ Authors <a name = "authors"></a>
 
-```
-pip install python
-pip install django
-```
+- [@Oluwa-Temmy](https://github.com/Oluwa-Temmy) - Founder/ Intellectual Rights/ Progammer/ UX/UI Developer/
 
-### Installing
+<!--See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) who participated in this project.-->
 
-A step by step series of examples that tell you how to get a development env running.
 
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo.
-
-## 🔧 Running the tests <a name = "tests"></a>
-
-Explain how to run the automated tests for this system.
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## 🎈 Usage <a name="usage"></a>
-
-Add notes about how to use the system.
-
-## 🚀 Deployment <a name = "deployment"></a>
-
-Add additional notes about how to deploy this on a live system.
+## Future Releases <a name = "future_releases"></a>
+### Current version (0.2.4)
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
+### Languages
+- [Python](https://www.python.org/) - Used for backend functions
+- JavaScript - Used for bringing FE data to BE and vice versa 
+
+### Backend
 - [MongoDB](https://www.mongodb.com/) - Database
 - [Django](https://djangoproject.com/) - Server Framework
 - [Django](https://www.djangoproject.com/) - Web Framework
 - [NodeJs](https://nodejs.org/en/) - Server Environment
 
-## ✍️ Authors <a name = "authors"></a>
-
-- [@Oluwa-Temmy](https://github.com/Oluwa-Temmy) - Founder/ Intellectual Rights/ Progammer/ Graphic Designer/ UX/UI Developer/
-
-See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) who participated in this project.
 
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- References
+- [Crime Stoppers USA](https://www.crimestoppersusa.org/)
