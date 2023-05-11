@@ -1,0 +1,31 @@
+.parent-content-container {
+  border-style: solid;
+  border-width: 1px 5px 7px 2px;
+  border-radius: 10px;
+
+  background-color: #6a5f4b;
+}
+
+/** directory links css */
+.outdir-list-links {
+  margin: 10px;
+}
+
+.outdir-list-links ul a {
+  margin: 0 10px 0 10px;
+
+  /*Text customization*/
+  color: black;
+  font-size: bold;
+  font-size: xx-large;
+
+  transition: ease 0.12s;
+}
+
+.outdir-list-links ul a:hover {
+  color: grey;
+}
+
+.outdir-list-links ul a:active {
+  color: darkblue;
+}

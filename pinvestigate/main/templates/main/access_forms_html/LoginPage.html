@@ -1,0 +1,64 @@
+{% extends 'main/base.html' %} {% load static %}
+
+<!--** login head **-->
+{% block extrahead_content %}
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static '/main/css/access_forms_css/access_base_forms.css' %}"
+/>
+{% endblock extrahead_content %}
+
+<!--** login body **-->
+{% block content %}
+<div class="access-base-form-container">
+  <!-- **                 center login box container                        ** -->
+  <!-- There is room for improvment for the login page to make it more dynamic -->
+  <div class="access-base-form-content-container">
+    <div>
+      <div>
+        <h2>Welcome back Pinvestigator</h2>
+      </div>
+    </div>
+    <!--kit: start of login form -->
+    <div class="login-form-content">
+      <form method="POST" action="#">
+        {% csrf_token %}
+        <input
+          type="text"
+          name="username"
+          placeholder="Username"
+          class="form-control"
+        /><br />
+        <input
+          type="text"
+          name="password"
+          placeholder="Password"
+          class="form-control"
+        /><br />
+        <input type="submit" value="Login" />
+      </form>
+      {% for message in messages %}
+      <p id="messages">{{message}}</p>
+      {% endfor %}
+    </div>
+    <!--kit: end of login form -->
+    <!--kit: start link to signup page-->
+    <div>
+      <!--! tags in nav-link-designs class in base.css is being applied to create account link-->
+      <small>
+        Don't have an account?
+        <a class="login-link-to-create-account" href="{% url 'signup' %}">
+          Create an account
+        </a>
+      </small>
+    </div>
+    <!--kit: end link to signup page-->
+  </div>
+</div>
+{% endblock content %}
+
+<!--fyi: JS Code Specific to signup form -->
+{% block extra_js_content_aft_body %}
+<script src="{% static '/main/js/access_form_js/signup_page_js/login_form_script.js' %}"></script>
+{% endblock extra_js_content_aft_body %}

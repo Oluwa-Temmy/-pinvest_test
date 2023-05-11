@@ -1,0 +1,55 @@
+{% extends 'main/base.html' %} {% load static %}
+
+<!--fyi: Head content for the web page that is needed-->
+{% block extrahead_content %}
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static '/main/css/access_forms_css/access_base_forms.css' %}"
+/>
+<!--**title-->
+<title>Pinvestigator Signup Page</title>
+{% endblock extrahead_content %}
+
+<!--fyi: This is the main content of the web page-->
+{% block content %}
+<div class="access-base-form-container">
+  <!--** center login box container **-->
+  <!-- There is room for improvment for the login page to make it more dynamic-->
+  <div class="access-base-form-content-container">
+    <div>
+      <div>
+        <h2>Create and Pinvestigate</h2>
+      </div>
+    </div>
+    <!--kit: start signup form -->
+    <div>
+      <!--! Issue with post method-->
+      <form method="POST" action="#">
+        {% csrf_token %} {{form.first_name}}<br />
+        {{form.last_name}} <br />
+        {{form.email}} <br />
+        {{form.username}} <br />
+        {{form.password1}} <br />
+        {{form.password2}} <br />
+        <input type="submit" value="Create Account" />
+      </form>
+    </div>
+    {{form.errors}}
+    <!--kit: end signup form -->
+    <!--kit: start link to login page-->
+    <div id="to-loginsignup-page-link">
+      <!--! tags in nav-link-designs class in base.css is being applied to create account link-->
+      <small>
+        Already a pinvestigator?
+        <a href="{% url 'login' %}"> Hop back in the action </a>
+      </small>
+    </div>
+    <!--kit: end link to login page-->
+  </div>
+</div>
+{% endblock content %}
+<!--fyi: JS Code Specific to signup form -->
+{% block extra_js_content_aft_body %}
+<script src="{% static '/main/js/access_form_js/signup_page_js/signup_form_script.js' %}"></script>
+{% endblock extra_js_content_aft_body %}

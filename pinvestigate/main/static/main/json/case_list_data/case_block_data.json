@@ -1,0 +1,16 @@
+[
+  {
+    "individual_name": "Rob Calvin",
+    "case_name": "The cold case",
+    "case_type": "Kidnapping",
+    "booking": "1925-04-10",
+    "location": "Chicago"
+  },
+  {
+    "individual_name": "Caroline Pening",
+    "case_name": "The Pennington",
+    "case_type": "Murder",
+    "booking": "2000-12-4",
+    "location": "Atlanta"
+  }
+]
