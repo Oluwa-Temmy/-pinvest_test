@@ -2,7 +2,7 @@
 
 Investigate public cases
 
-<p align="center">
+<!-- <p align="center">
   <a href="" rel="noopener">
  <img width=200px height=200px src="https://i.imgur.com/6wj0hh6.jpg" alt="Project logo"></a>
 </p>
@@ -17,7 +17,7 @@ Investigate public cases
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
 </div>
-
+-->
 ---
 
 <p align="center"> Few lines describing your project.
