@@ -69,3 +69,4 @@ Paddock, Blair. “Homicide Clearance Rate Lower in Chicago’s Black Communitie
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 
 - [Crime Stoppers USA](https://www.crimestoppersusa.org/)
+- [Chicago Police Department](https://home.chicagopolice.org/)
