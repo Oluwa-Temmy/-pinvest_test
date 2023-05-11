@@ -1,7 +1,69 @@
-{% extends "main/base.html" %} {% block content %}
-<div class="main-bg">
-  {% block test %}
-  <p>Left side bar render</p>
-  {% endblock test%}
+{% extends "main/base.html" %} {% load static %} {% block extrahead_content %}
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static '/main/css/uni_bg.css' %}"
+/>
+
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static '/main/css/index.css' %}"
+/>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static '/main/css/index_sticky_navbar.css' %}"
+/>
+{% endblock extrahead_content %} {% block content %}
+<!--kit: START OF CONTENT-->
+<div class="container-fluid main-bg">
+  <!--kit: START STICKY NAVBAR-->
+  <div id="header-sticky-navbar">
+    <ul class="d-flex flex-row justify-content-end">
+      <li><a href="#">Tips</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="{% url 'about_us' %}">About Us</a></li>
+      <li><a href="{% url 'signup' %}">Sign Up</a></li>
+      <li><a href="{% url 'login' %}">Login</a></li>
+      <li><a href="#">Donate</a></li>
+    </ul>
+  </div>
+  <!--kit: END STICKY NAVBAR-->
+  <!--kit: LEFTSIDE BAR START-->
+  <div class="container left-sidebar d-flex flex-column">
+    <div class="text-center">
+      <h1>
+        Welcome <br />
+        Pinvestigator
+      </h1>
+    </div>
+    <div class="text-center">
+      <h4>Status</h4>
+      <img src="" alt="Image place holder" />
+      <h2><strong>NAME</strong></h2>
+      <h3>Age</h3>
+      <h3>LAST SEEN</h3>
+      <h4>Description</h4>
+    </div>
+    <div class="text-center" id="call-to-action-btns">
+      <button>SIGNUP</button>
+      <button>LOGIN</button>
+    </div>
+  </div>
+  <!--kit: LEFTSIDE BAR END-->
+  <!--kit: START 2ND PAGE-->
+  <section class="container-fluid index-section2">
+    <div>
+      <h1>Donate</h1>
+    </div>
+    <div>
+      <p>hey man</p>
+    </div>
+  </section>
+  <!--kit: END 2ND PAGE-->
 </div>
-{% endblock content %}
+<!--kit: END OF CONTENT-->
+{% endblock content %} {% block extra_js_content_aft_body %}
+<script src="{% static '/main/js/index_sticky_nav.js' %}"></script>
+{% endblock extra_js_content_aft_body%}
