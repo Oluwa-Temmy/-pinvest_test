@@ -51,7 +51,7 @@ Paddock, Blair. “Homicide Clearance Rate Lower in Chicago’s Black Communitie
 
 
 ## Future Releases <a name = "future_releases"></a>
-###Current version (0.2.4)
+### Current version (0.2.4)
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
