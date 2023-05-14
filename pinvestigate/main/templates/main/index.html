@@ -1,7 +1,61 @@
-{% extends "main/base.html" %} {% block content %}
-<div class="main-bg">
-  {% block test %}
-  <p>Left side bar render</p>
-  {% endblock test%}
+{% extends "main/base.html" %} {% load static %} {% block extrahead_content %}
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static '/main/css/uni_bg.css' %}"
+/>
+
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static '/main/css/index.css' %}"
+/>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static '/main/css/index_sticky_navbar.css' %}"
+/>
+{% endblock extrahead_content %} {% block content %}
+<!--kit: START OF CONTENT-->
+<div class="container-fluid main-bg">
+  <!--kit: START STICKY NAVBAR-->
+  {% include 'main/slidedown_nav.html' %}
+  <!--kit: END STICKY NAVBAR-->
+  <!--kit: LEFTSIDE BAR START-->
+  <div class="container left-sidebar d-flex flex-column">
+    <div class="text-center">
+      <h1>
+        Welcome <br />
+        Pinvestigator
+      </h1>
+    </div>
+    <div class="text-center">
+      <h4>Status</h4>
+      <img src="" alt="Image place holder" />
+      <h2><strong>NAME</strong></h2>
+      <h3>Age</h3>
+      <h3>LAST SEEN</h3>
+      <h4>Description</h4>
+    </div>
+    <div class="text-center" id="call-to-action-btns">
+      <button>SIGNUP</button>
+      <button>LOGIN</button>
+    </div>
+  </div>
+  <!--kit: LEFTSIDE BAR END-->
+  <!--kit: START 2ND PAGE-->
+  <section class="container-fluid index-section2">
+    <div class="d-flex flex-column text-center">
+      <h1>Donate</h1>
+      <h3>Help The Cause</h3>
+    </div>
+    <div>
+      <p>Help Us grow and expand the community</p>
+    </div>
+  </section>
+  <!--kit: END 2ND PAGE-->
 </div>
-{% endblock content %}
+<!--kit: END OF CONTENT-->
+{% endblock content %} {% block extra_js_content_aft_body %}
+<script src="{% static '/main/js/index_sticky_nav.js' %}"></script>
+{% endblock extra_js_content_aft_body%}

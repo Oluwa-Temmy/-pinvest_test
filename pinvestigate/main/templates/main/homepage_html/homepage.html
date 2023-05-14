@@ -9,43 +9,37 @@
   type="text/css"
   href="{% static '/main/css/homepage_css/homepage.css' %}"
 />
+
 <title>Homepage</title>
 {% endblock extrahead_content %} {% block content%}
 <section class="uni-bg" id="parent-pos-section">
   <!--kit: START HEADER NAV LINKS-->
-  <div id="top-page-link">
-    <nav>
-      <ul class="d-flex flex-row">
-        <li class="col-3"><a href="#">World</a></li>
-        <li class="col-3"><a href="#">JUT</a></li>
-        <li class="col-3"><a href="#">George</a></li>
-      </ul>
-    </nav>
+  <div class="container-fluid" id="top-page-link">
+    <ul class="d-flex flex-row justify-content-center">
+      <li class="tab-link col-3"><a>Crimminal</a></li>
+      <li class="tab-link col-3"><a>Missing</a></li>
+      <li class="tab-link col-3"><a>Contact</a></li>
+      <li class="tab-link col-3"><a>Donate</a></li>
+    </ul>
   </div>
+
   <!--kit: END HEADER NAV LINKS-->
   <div>
     <h1>Top Cases</h1>
   </div>
-
   <!--kit: START CASE AREA -->
-  <div class="parent-content-container" id="case-list">
-    <div class="row" id="case-list-item">
-      <div class="col-md-6">
-        <img
-          class="suspect-profile-img"
-          src="{% static 'main/image/profimg.png' %}"
-          alt="case_img_placeholder"
-        />
-        <h2>case_individual_name</h2>
-      </div>
-      <div class="col-md-6">
-        <h1>Case: case_name</h1>
-        <h2>Case_type</h2>
-        <h3>Location</h3>
-        <small>description</small>
-      </div>
-    </div>
-  </div>
+  <div class="parent-content-container " id="case-list">
+      <div class="row" id="case-list-item">
+        <div class="col-md-6">
+          
+          <h2>name {{individual_object.name}}</h2>
+        </div>
+        <div class="col-md-6">
+          <h1>Case: {{individual_object.case}}</h1>
+          <h2>Case_type</h2>
+          <h3>Location</h3>
+          <small class="d-inline-block text-truncate">Description: {{individual_object.desc}}</small>
+        </div>
   <!--kit: END CASE AREA -->
 </section>
 {% endblock content%} {% block extra_js_content_aft_body %}
