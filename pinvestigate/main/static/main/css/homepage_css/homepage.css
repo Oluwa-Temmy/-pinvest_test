@@ -5,6 +5,8 @@ ul {
 .parent-content-container {
   background-color: #c5ac6b !important;
 
+  height: fit-content;
+
   border-color: #1a120b;
   border-radius: 0px 0px 10px 10px;
   border-style: solid;
