@@ -29,21 +29,17 @@
   </div>
   <!--kit: START CASE AREA -->
   <div class="parent-content-container " id="case-list">
-    <div class="row" id="case-list-item">
-      <div class="col-md-6">
-        <img
-          class="suspect-profile-img"
-          src="{% static 'main/image/profimg.png' %}"
-          alt="case_img_placeholder"
-        />
-        <h2>case_individual_name</h2>
-      </div>
-      <div class="col-md-6">
-        <h1>Case: case_name</h1>
-        <h2>Case_type</h2>
-        <h3>Location</h3>
-        <small class="d-inline-block text-truncate">description</small>
-      </div>
+      <div class="row" id="case-list-item">
+        <div class="col-md-6">
+          
+          <h2>name {{individual_object.name}}</h2>
+        </div>
+        <div class="col-md-6">
+          <h1>Case: {{individual_object.case}}</h1>
+          <h2>Case_type</h2>
+          <h3>Location</h3>
+          <small class="d-inline-block text-truncate">Description: {{individual_object.desc}}</small>
+        </div>
   <!--kit: END CASE AREA -->
 </section>
 {% endblock content%} {% block extra_js_content_aft_body %}

@@ -61,5 +61,5 @@
 
 /*Donate btn Styling*/
 .index-section2 {
-  background-color: black;
+  background: linear-gradient(to top, black, rgba(0, 0, 0, 0) 90%);
 }
