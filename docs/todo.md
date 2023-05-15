@@ -8,11 +8,8 @@
 [Fixed]Fix submit not submitting
 [Note] Links are now fixed, make sure to remove comma so that it only applies to that certain element
 
-## Task [04/10/2023]:
+# ToDo
 
-Complete homepage
+### Homepage
 
-## Last stop [04/10/2023]:
-
-Make homepage
-[Added Bootstrap]Fix colorization
+- Create a detailed view for each individual
