@@ -18,6 +18,8 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    #fyi: Landing page and acceccories(non-access)
     path('', include("main.urls")),
+    #fyi: Access pages
     path('access/', include("access_pages.urls")),
 ]

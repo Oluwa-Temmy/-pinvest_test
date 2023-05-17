@@ -42,9 +42,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    #Pages
+    #fyi: Website Apps
     'main.apps.MainConfig',
     'access_pages'
+    #fyi: For easier templating
+    #For creating better forms
+    'crispy_forms'
 ]
 
 MIDDLEWARE = [
