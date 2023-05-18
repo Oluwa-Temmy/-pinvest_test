@@ -44,11 +44,16 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     #fyi: Website Apps
     'main.apps.MainConfig',
-    'access_pages'
+    'access_pages',
     #fyi: For easier templating
     #For creating better forms
-    'crispy_forms'
+    'crispy_forms',
+    'crispy_bootstrap5',
 ]
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+CRISPY_TEMPLATE_PACK = "bootstrap5"
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -65,7 +70,8 @@ ROOT_URLCONF = 'pinvestigate.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,'main','templates')],
+        'DIRS': [os.path.join(BASE_DIR,'main','templates'),
+                 os.path.join(BASE_DIR,'access_pages','templates', 'access_pages')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
