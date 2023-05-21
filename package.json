@@ -1,16 +1,15 @@
 {
   "name": "pinvestigator",
-  "version": "1.0.0",
+  "version": "0.2.4",
   "description": "Investigate public cases",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Oluwa-Temmy",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^5.3.0-alpha3",
-    "sass": "^1.62.1"
+    "bootstrap": "^5.3.0-alpha3"
   }
 }

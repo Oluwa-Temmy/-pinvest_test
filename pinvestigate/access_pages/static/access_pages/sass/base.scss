@@ -1,0 +1,9 @@
+$primary-color: #333;
+$test-color: blue;
+
+.container-fluid {
+  background-color: $primary-color;
+  color: $test-color;
+  height: 100%;
+  width: 100%;
+}

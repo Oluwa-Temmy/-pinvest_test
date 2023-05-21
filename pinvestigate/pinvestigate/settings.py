@@ -12,6 +12,9 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from pathlib import Path
 import os
+#For Django Compressors
+from django.contrib.staticfiles.finders import FileSystemFinder, AppDirectoriesFinder
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -49,10 +52,25 @@ INSTALLED_APPS = [
     #For creating better forms
     'crispy_forms',
     'crispy_bootstrap5',
+    'django_sass',
 ]
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 CRISPY_TEMPLATE_PACK = "bootstrap5"
+
+COMPRESS_PRECOMPILERS = (('text/x-scss', 'django_libsass.SassCompiler'),)
+
+SASS_PROCESSOR_INCLUDE_DIRS = [
+    os.path.join(BASE_DIR, 'access_pages', 'static', 'access_pages','sass'),
+]
+
+SASS_OUTPUT_DIR = [
+    os.path.join(BASE_DIR, 'access_pages', 'static', 'access_pages','css'),
+]
+
+SASS_OUTPUT_STYLE = 'nested'
+
+SASS_PROCESSOR_ENABLED = True
 
 
 MIDDLEWARE = [
@@ -129,12 +147,20 @@ USE_I18N = True
 USE_TZ = True
 
 
-# fyi: Static files (CSS, JavaScript, Images)
+# fyi: STATIC FILES CONFIG (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
+STATICFILES_FINDERS = [
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+]
+
 STATIC_URL = '/static/'
+
 #STATICFILES_DIRS = [
-#    BASE_DIR /  "main" / "static" / "image" ]
+#    os.path.join(BASE_DIR, "main", "static", "image"),
+#    ]
+
 STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
 
