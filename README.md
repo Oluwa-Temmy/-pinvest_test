@@ -65,6 +65,8 @@ Paddock, Blair. “Homicide Clearance Rate Lower in Chicago’s Black Communitie
 - [Django](https://www.djangoproject.com/) - Web Framework
 - [NodeJs](https://nodejs.org/en/) - Server Environment
 
+### Packages
+- Heres a link to the [requirments.txt](https://github.com/Oluwa-Temmy/Pinvestigator/blob/development/requirments.txt) file
 
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 
