@@ -12,6 +12,7 @@ Used in Base*/
   color: black;
   padding: 80px 50px 80px 50px;
   height: fit-content;
+  min-height: calc(100vh + 150px);
   width: 100vh;
 }
 

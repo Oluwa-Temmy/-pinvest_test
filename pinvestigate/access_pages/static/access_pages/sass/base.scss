@@ -2,7 +2,7 @@ $primary-color: #483229;
 $form-bg-color: #6a5f4b;
 $primary-font: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 $primary-font-color: black;
-
+$min-height: calc(100vh + 150px);
 $mediaComputer: 1000px;
 
 /*Create the primary border style
@@ -27,6 +27,8 @@ Used in Base*/
   padding: 80px 50px 80px 50px;
 
   height: fit-content;
+  min-height: $min-height;
+
   width: 100vh;
 }
 

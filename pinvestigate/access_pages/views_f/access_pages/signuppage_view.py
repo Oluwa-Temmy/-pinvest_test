@@ -26,28 +26,33 @@ class SignupView(FormView):
     #! This fields should be fixed, for some reason
     #! It makes the website run though, 
     #! Make sure to ad the fields when testing
-    #fields = {'date_of_birth': CreateSignupForm.date_of_birth,}
+    fields = {'date_of_birth': 'love',}#CreateSignupForm.date_of_birth
 
-    def __init__(self, **kwargs: Any) -> None:
+    def __init__(self, **kwargs: Any):
         super().__init__(**kwargs)
         self.helper = FormHelper(self)
         
         self.helper.form_id = 'signup-form'
-        self.helper.add_input(Submit('submit', 'Submit'))
 
         #Instead of specifying the method (i.e. 'POST' and 'GET')
         #uses htmx to specify post -> target
         #hx-swap: replaces outer html with inner, doesnt reload
-        #//OMIT: self.helper.form_action = reverse_lazy('signup')
-        #//OMIT: self.helper.form_method = 'post'
-        self.helper.attrs = {
-            'hx-post': reverse_lazy('signup-form'),
-            'hx-target': 'signup-form',
-            'hx-swap': 'outerHTML'
-        }
-
-
+        self.helper.form_action = reverse_lazy('signup')
+        self.helper.form_method = 'post'
+        #self.helper.attrs = {
+        #    'hx-post': reverse_lazy('signup-form'),
+        #    'hx-target': 'signup-form',
+        #    'hx-swap': 'outerHTML'
+        #}
+        #todo: Helper button not displaying on the front end fix
+        print("Adding Submit")
+        self.helper.add_input(Submit('submit', 'Submit'))
         
+        print("Submit has been added")
+
+    #fyi: To Hide password fields(crispy forms does it)
+    #//password = forms.CharField(widget=forms.PasswordInput())
+    #//password2 = forms.CharField(widget=forms.PasswordInput())
 
     #fyi: If you want to add extra key-value pairs 
     #fyi: By default form view already has a key value pair for accessing
@@ -67,7 +72,13 @@ class SignupView(FormView):
             return super().form_valid(form)
         else:
             return super().form_invalid(form)
-
+        
+    def clean_username(self):
+        username = self.cleaned_data['username']
+        if len(username) <= 5:
+            raise forms.ValidationError("Username is too Short")
+        return username
+ 
 
    
     
