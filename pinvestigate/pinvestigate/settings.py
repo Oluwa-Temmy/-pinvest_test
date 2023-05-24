@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     #For creating better forms
     'crispy_forms',
     'crispy_bootstrap5',
+    #Easier CSS
     'django_sass',
 ]
 
@@ -60,16 +61,20 @@ CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 COMPRESS_PRECOMPILERS = (('text/x-scss', 'django_libsass.SassCompiler'),)
 
+#django-sass: A list of directories from where sass files can be found
 SASS_PROCESSOR_INCLUDE_DIRS = [
     os.path.join(BASE_DIR, 'access_pages', 'static', 'access_pages','sass'),
 ]
 
+#django-sass: The directory where sass files will be outputed
 SASS_OUTPUT_DIR = [
     os.path.join(BASE_DIR, 'access_pages', 'static', 'access_pages','css'),
 ]
 
+#django-sass: allows for the same file structure to be kept during compiling
 SASS_OUTPUT_STYLE = 'nested'
 
+#django-sass: Allows for the processing of sass files
 SASS_PROCESSOR_ENABLED = True
 
 
@@ -150,6 +155,8 @@ USE_TZ = True
 # fyi: STATIC FILES CONFIG (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
+#FileSystemFinder: looks for static files specified in STATICFILES_DIR
+#AppDirectoriesFinder: looks for static files in static dir in each app
 STATICFILES_FINDERS = [
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
@@ -157,9 +164,10 @@ STATICFILES_FINDERS = [
 
 STATIC_URL = '/static/'
 
-#STATICFILES_DIRS = [
-#    os.path.join(BASE_DIR, "main", "static", "image"),
-#    ]
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "main", "static", "main"),
+    os.path.join(BASE_DIR, "access_pages", "static", "access_pages"),
+    ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
@@ -168,3 +176,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, "static")
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+#default user model for django
+#AUTH_USER_MODEL = 'main.CreateSignupForm'

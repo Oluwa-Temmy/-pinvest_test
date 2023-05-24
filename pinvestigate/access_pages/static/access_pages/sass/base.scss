@@ -1,9 +1,40 @@
-$primary-color: #333;
-$test-color: blue;
+$primary-color: #483229;
+$form-bg-color: #6a5f4b;
+$primary-font: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+$primary-font-color: black;
+
+$mediaComputer: 1000px;
+
+/*Create the primary border style
+Used in Base*/
+@mixin border-styling() {
+  border-style: solid;
+  border-width: 1px 5px 7px 2px;
+  border-radius: 10px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: $primary-font;
+}
 
 .container-fluid {
   background-color: $primary-color;
-  color: $test-color;
-  height: 100%;
-  width: 100%;
+  color: $primary-font-color;
+
+  padding: 80px 50px 80px 50px;
+
+  height: fit-content;
+  width: 100vh;
+}
+
+.container {
+  background-color: $form-bg-color;
+  @include border-styling();
+  height: fit-content;
+  max-width: 900px;
+  padding: 40px;
+  max-width: none;
 }
