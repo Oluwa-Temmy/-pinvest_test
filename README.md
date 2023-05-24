@@ -66,7 +66,7 @@ Paddock, Blair. “Homicide Clearance Rate Lower in Chicago’s Black Communitie
 - [NodeJs](https://nodejs.org/en/) - Server Environment
 
 ### Packages
-- Heres a link to the [requirments.txt](https://github.com/Oluwa-Temmy/Pinvestigator/blob/development/requirments.txt) file
+- Heres a link to project environment, Pip [requirments.txt](https://github.com/Oluwa-Temmy/Pinvestigator/blob/development/requirments.txt) and NPM [package.json](https://github.com/Oluwa-Temmy/Pinvestigator/blob/development/package.json)
 
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 
