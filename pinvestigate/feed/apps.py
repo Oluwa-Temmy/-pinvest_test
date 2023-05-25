@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class UseraccessConfig(AppConfig):
+class FeedConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'UserAccess'
+    name = 'feed'

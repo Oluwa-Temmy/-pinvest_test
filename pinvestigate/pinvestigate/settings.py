@@ -48,6 +48,8 @@ INSTALLED_APPS = [
     #fyi: Website Apps
     'main.apps.MainConfig',
     'access_pages',
+    'user_profile',
+    'feed',
     #fyi: For easier templating
     #For creating better forms
     'crispy_forms',
@@ -94,7 +96,10 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [os.path.join(BASE_DIR,'main','templates'),
-                 os.path.join(BASE_DIR,'access_pages','templates', 'access_pages')],
+                 os.path.join(BASE_DIR,'access_pages','templates', 'access_pages'),
+                 #os.path.join(BASE_DIR,'user_profile','templates', 'user_profile'),
+                 #os.path.join(BASE_DIR,'feed','templates', 'feed')
+                 ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -167,6 +172,8 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "main", "static", "main"),
     os.path.join(BASE_DIR, "access_pages", "static", "access_pages"),
+    #os.path.join(BASE_DIR, "user_profile", "static", "user_profile"),
+    #os.path.join(BASE_DIR, "feed", "static", "feed"),
     ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, "static")

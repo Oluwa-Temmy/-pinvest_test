@@ -22,4 +22,6 @@ urlpatterns = [
     path('', include("main.urls")),
     #fyi: Access pages
     path('access/', include("access_pages.urls")),
+    #fyi: This is for regular 
+    #path('profile/', include("user_profile.urls"))
 ]

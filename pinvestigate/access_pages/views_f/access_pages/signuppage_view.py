@@ -20,7 +20,7 @@ from main.models.main.access_forms_models.signup_page_model import CreateSignupF
 
 # Create your views here.
 class SignupView(FormView):
-    template_name = 'forms/signup_page.html'
+    template_name = 'forms_html/signup_page.html'
     form_class = CreateSignupForm
     success_url = 'login/'
     #! This fields should be fixed, for some reason
