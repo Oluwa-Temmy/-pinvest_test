@@ -18,7 +18,8 @@ from main.models.main.access_forms_models.signup_page_model import CreateSignupF
 #*from django.template.context_processors import csrf
 #*from crispy_forms.utils import render_crispy_form
 
-# Create your views here.
+# NOTE: The form is not connected to the database
+
 class SignupView(FormView):
     template_name = 'forms_html/signup_page.html'
     form_class = CreateSignupForm
