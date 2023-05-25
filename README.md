@@ -53,6 +53,15 @@ Paddock, Blair. “Homicide Clearance Rate Lower in Chicago’s Black Communitie
 
 ### Current version (0.2.4)
 
+### Dev Minor Release 0.3.0
+
+New packages integrated to render easier -`crispy-forms` are now used to render forms much easier </br> -`django-sass` is being used to keep consistant styling throught the
+page. (No direct use of CSS)
+
+Project Structure Change
+-Project structure for more scalability, security, and targeting
+-Class based views for rendering
+
 ## ⛏️ Built Using <a name = "built_using"></a>
 
 ### Languages
