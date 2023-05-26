@@ -1,0 +1,25 @@
+$primary-font-size: 20px;
+
+.title-container {
+  padding: 10px 8px 10px 8px;
+}
+
+.nav-links {
+  ul {
+    padding: 10px 25px 10px 25px;
+    border-style: dashed;
+    border-color: black;
+    list-style: none;
+  }
+  li {
+    border-radius: 20px;
+
+    margin: 20px;
+    padding: 10px;
+  }
+  a {
+    color: black;
+    font-size: $primary-font-size;
+    text-decoration: none;
+  }
+}

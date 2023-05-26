@@ -5,7 +5,7 @@ from django.contrib import messages
 
 #*For user signup
 from .models.main.access_forms_models.signup_page_model import CreateSignupForm
-from django.contrib.auth.forms import UserCreationForm
+#from django.contrib.auth.forms import UserCreationForm
 
 #*Create user login
 from django.contrib.auth import authenticate, login, logout

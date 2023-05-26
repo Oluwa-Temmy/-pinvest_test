@@ -12,6 +12,9 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from pathlib import Path
 import os
+#For Django Compressors
+from django.contrib.staticfiles.finders import FileSystemFinder, AppDirectoriesFinder
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -42,10 +45,40 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    #Pages
+    #fyi: Website Apps
     'main.apps.MainConfig',
-    'access_pages'
+    'access_pages',
+    'user_profile',
+    'feed',
+    #fyi: For easier templating
+    #For creating better forms
+    'crispy_forms',
+    'crispy_bootstrap5',
+    #Easier CSS
+    'django_sass',
 ]
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+CRISPY_TEMPLATE_PACK = "bootstrap5"
+
+COMPRESS_PRECOMPILERS = (('text/x-scss', 'django_libsass.SassCompiler'),)
+
+#django-sass: A list of directories from where sass files can be found
+SASS_PROCESSOR_INCLUDE_DIRS = [
+    os.path.join(BASE_DIR, 'access_pages', 'static', 'access_pages','sass'),
+]
+
+#django-sass: The directory where sass files will be outputed
+SASS_OUTPUT_DIR = [
+    os.path.join(BASE_DIR, 'access_pages', 'static', 'access_pages','css'),
+]
+
+#django-sass: allows for the same file structure to be kept during compiling
+SASS_OUTPUT_STYLE = 'nested'
+
+#django-sass: Allows for the processing of sass files
+SASS_PROCESSOR_ENABLED = True
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -62,7 +95,11 @@ ROOT_URLCONF = 'pinvestigate.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,'main','templates')],
+        'DIRS': [os.path.join(BASE_DIR,'main','templates'),
+                 os.path.join(BASE_DIR,'access_pages','templates', 'access_pages'),
+                 #os.path.join(BASE_DIR,'user_profile','templates', 'user_profile'),
+                 #os.path.join(BASE_DIR,'feed','templates', 'feed')
+                 ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -120,12 +157,25 @@ USE_I18N = True
 USE_TZ = True
 
 
-# fyi: Static files (CSS, JavaScript, Images)
+# fyi: STATIC FILES CONFIG (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
+#FileSystemFinder: looks for static files specified in STATICFILES_DIR
+#AppDirectoriesFinder: looks for static files in static dir in each app
+STATICFILES_FINDERS = [
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+]
+
 STATIC_URL = '/static/'
-#STATICFILES_DIRS = [
-#    BASE_DIR /  "main" / "static" / "image" ]
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "main", "static", "main"),
+    os.path.join(BASE_DIR, "access_pages", "static", "access_pages"),
+    #os.path.join(BASE_DIR, "user_profile", "static", "user_profile"),
+    #os.path.join(BASE_DIR, "feed", "static", "feed"),
+    ]
+
 STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
 
@@ -133,3 +183,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, "static")
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+#default user model for django
+#AUTH_USER_MODEL = 'main.CreateSignupForm'
