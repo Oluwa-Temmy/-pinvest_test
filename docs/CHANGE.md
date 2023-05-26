@@ -5,7 +5,7 @@ Here is where you can find the history map of Pinvestigator website
 <!--## [Unreleased] - yyyy-mm-dd
 
 Here we write upgrading notes for brands. It's a team effort to make them as
-straightforward as possible.
+straightforward as possible.0
 
 ### Added
 
@@ -67,6 +67,8 @@ Django crispy forms now being used in order to make form rendering efficient and
 
 > - Follow install instruction `django-crispy-forms`
 > - Create a file that creates form fields (Follow django fields documentation)
+> - Create a class based view and set the form_class variable to to the previously created form
+> - Use the crispy form tag in the template
 
 ### :triangular_ruler: Project Structure Change
 
