@@ -19,8 +19,6 @@ straightforward as possible.0
 
 ### Fixed-->
 
-<<<<<<< HEAD
-=======
 # [Unreleased] - yet-to-come
 
 This update will mainly focus on general user authentication and general user profiling.
@@ -77,12 +75,9 @@ Django crispy forms now being used in order to make form rendering efficient and
 
 The project templates now uses Class-Based rendering to make pages more functional in less code.
 
-Apps have different functionalities, which could be minor or major.
+Apps have different functionalities, which could be minor or major.</br>
 
-#
-
->>>>>>> 5c03d6c (Change files)
-## [0.2.0] - 2023-05-08
+# [0.2.0] - 2023-05-08
 
 This update is based on better pages.
 Homepage update
