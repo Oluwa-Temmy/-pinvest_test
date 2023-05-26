@@ -1,6 +1,7 @@
 # Change Log
 
-Here is where you can find the history map of Pinvestigator website
+Here is where you can find the update history of Pinvestigator website</br></br>
+**_NOTE: Older and Depricated source code is refrenced in the repo for security reasons. If you want to understand a little about the project, or contribute please, please reach out to my github account_**
 
 <!--## [Unreleased] - yyyy-mm-dd
 
@@ -22,7 +23,7 @@ straightforward as possible.0
 =======
 # [Unreleased] - yet-to-come
 
-This update will mainly focus on general user authentication and general user profiling
+This update will mainly focus on general user authentication and general user profiling.
 
 ### Added
 
@@ -44,7 +45,7 @@ This update will mainly focus on general user authentication and general user pr
 # :fire: Minor Dev Update [0.3.0] - 2023-05-25
 
 This is a minor update that pertains to the structure
-and backend of the website that is useful for devs and contributors.
+and backend of the website that is useful for devs and contributors.</br>
 
 ## :heavy_plus_sign: Added
 
@@ -76,11 +77,7 @@ Django crispy forms now being used in order to make form rendering efficient and
 
 The project templates now uses Class-Based rendering to make pages more functional in less code.
 
-### Fixed
-
-- [PROJECTNAME-TTTT](http://tickets.projectname.com/browse/PROJECTNAME-TTTT)
-  PATCH Add logic to runsheet teaser delete to delete corresponding
-  schedule cards.-->
+Apps have different functionalities, which could be minor or major.
 
 #
 
