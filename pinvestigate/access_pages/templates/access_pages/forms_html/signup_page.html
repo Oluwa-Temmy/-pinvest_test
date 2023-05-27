@@ -1,0 +1,29 @@
+{% extends 'access_pages/base.html' %}
+<!---->
+{% load crispy_forms_tags %} {% load static %}
+<!-- kit: CONTENT START-->
+{% block content %}
+<div>
+  <!--kit: TITLE -->
+  <div class="d-flex flex-column text-center">
+    <h1>Sign Up</h1>
+    <div>
+      <small
+        >Already a pinvestigator?
+        <a href="#"> Hop back in the action </a></small
+      >
+    </div>
+  </div>
+  <!--kit: END TITLE -->
+  <hr />
+  <!--kit: FORM -->
+  <div>{% crispy form %}</div>
+  <!--kit: END FORM -->
+  <div>
+    <small
+      >Already a pinvestigator?
+      <a href="#top"> Hop back in the action </a></small
+    >
+  </div>
+</div>
+{% endblock content %}
