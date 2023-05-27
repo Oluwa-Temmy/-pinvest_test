@@ -16,8 +16,8 @@ docs/issues.md
 
 #Web Config files
 pinvestigate/pinvestigate/
-migrations/
-models/
+pinvestigate/*/migrations/
+pinvestigate/*/models/
 
 #App
 **/models.py
