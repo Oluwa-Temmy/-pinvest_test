@@ -1,3 +1,5 @@
+pin_venv/
+
 issues.md
 node_modules/
 package-lock.json
