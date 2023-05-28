@@ -1,0 +1,27 @@
+<!--4 line break fix-->{% extends 'access_pages/base.html' %} {% load static %}
+{% block extrahead_content %}
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static 'access_pages/css/index.css' %}"
+/>
+<link rel="stylesheet" href="#" />
+
+<link rel="stylesheet" href="#" />
+
+<title>Index</title>
+{% endblock extrahead_content %} {% block content %}
+<div class="nav-cnt-container">
+  <div class="title-container"><h1>Navigations</h1></div>
+  <div class="nav-links">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="{% url 'login_page'%}">Login</a></li>
+      <li><a href="{% url 'signup_page'%}">Sign Up</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Forgot User</a></li>
+      <li><a href="#">Donate</a></li>
+    </ul>
+  </div>
+</div>
+{% endblock content %}

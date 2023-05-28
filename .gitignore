@@ -1,21 +1,28 @@
+#VENV and machinespecific files
 pin_venv/
-
-issues.md
+pin_mobvenv/
 node_modules/
+.vscode/
 package-lock.json
-package.json
+*.pyc
 
-pinvestigate/docs/track.md
-pinvestigate/pinvestigate/
+#docs
+docs/issues.md
 
-pinvestigate/main/admin.py
-pinvestigate/main/apps.py
-pinvestigate/main/models.py
-pinvestigate/main/urls.py
-pinvestigate/main/views.py
-pinvestigate/main/tests.py
-
-pinvestigate/main/models/
-pinvestigate/main/static/main/js/
-
+#data files
+*.log
 *.sqlite3
+*.db
+
+#Web Config files
+pinvestigate/pinvestigate/
+pinvestigate/*/migrations/
+pinvestigate/*/models/
+
+#App
+**/models.py
+**/admin.py
+**/apps.py
+**/tests.py
+**/views.py
+**/urls.py
